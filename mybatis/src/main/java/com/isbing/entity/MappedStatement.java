@@ -20,6 +20,22 @@ public class MappedStatement {
 		this.sqlSource = sqlSource;
 	}
 
+	public String getStatementId() {
+		return statementId;
+	}
+
+	public void setStatementId(String statementId) {
+		this.statementId = statementId;
+	}
+
+	public SqlSource getSqlSource() {
+		return sqlSource;
+	}
+
+	public void setSqlSource(SqlSource sqlSource) {
+		this.sqlSource = sqlSource;
+	}
+
 	public MappedStatement() {
 	}
 

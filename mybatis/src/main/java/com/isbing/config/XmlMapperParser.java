@@ -5,9 +5,7 @@ import com.isbing.entity.MappedStatement;
 import com.isbing.entity.SqlSource;
 import org.dom4j.Element;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by song bing
