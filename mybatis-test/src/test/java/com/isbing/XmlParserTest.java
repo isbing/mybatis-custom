@@ -31,5 +31,6 @@ public class XmlParserTest {
 		// 解析根节点。要返回一个Configuration对象
 		Configuration configuration = xmlConfigParser.parse(document.getRootElement());
 		System.out.println(configuration.getDataSource().getConnection());
+		System.out.println(configuration.getMappedStatementMap());
 	}
 }

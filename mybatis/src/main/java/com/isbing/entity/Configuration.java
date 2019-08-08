@@ -1,6 +1,8 @@
 package com.isbing.entity;
 
 import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by song bing
@@ -8,6 +10,15 @@ import javax.sql.DataSource;
  */
 public class Configuration {
 	private DataSource dataSource;
+	private Map<String, MappedStatement> mappedStatementMap = new HashMap<>();
+
+	public Map<String, MappedStatement> getMappedStatementMap() {
+		return mappedStatementMap;
+	}
+
+	public void addMappedStatement(String statementId, MappedStatement mappedStatement) {
+		this.mappedStatementMap.put(statementId, mappedStatement);
+	}
 
 	public DataSource getDataSource() {
 		return dataSource;
